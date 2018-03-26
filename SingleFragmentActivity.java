@@ -1,13 +1,11 @@
-package com.example.i550.criminalintent;
+package ;
+
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
-/**
- * Created by i550 on 011 11.02.2018.
- */
 
 public abstract class SingleFragmentActiviy extends AppCompatActivity {
     protected abstract Fragment createFragment();
@@ -19,7 +17,7 @@ public abstract class SingleFragmentActiviy extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
         if(fragment==null){
-            fragment=createFragment();
+            fragment = createFragment();
             fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
     }

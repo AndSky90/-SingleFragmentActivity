@@ -5,6 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.i550.criminalintent.CrimeActivity_notUsed">
+    tools:context="com.">
 
 </FrameLayout>
